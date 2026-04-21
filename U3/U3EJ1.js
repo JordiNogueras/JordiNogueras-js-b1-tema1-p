@@ -23,7 +23,14 @@
 console.log(hypotenuse(3,4));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+function hypotenuse(a ,b){
 
+  function square(val){
+    return val * val;
+  }
+
+  return Math.sqrt(square(a) + square(b));
+}
 
 
 

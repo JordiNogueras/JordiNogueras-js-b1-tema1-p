@@ -68,7 +68,16 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function planetData(planet){
+    let data = Array(2);
 
+    data[0] = planet.name;
+    data[1] = planet.diameter;
+
+    return data;
+}
+
+const result = planets.map(planetData);
 
 /**
  * TEST

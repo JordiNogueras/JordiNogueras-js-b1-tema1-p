@@ -15,7 +15,15 @@
 */
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
+function rangeOfNumbers(num) {
+    let result = 0; // ✅ inicializar en 0
+    result += num;
+    if (num > 0) {
+        return result + rangeOfNumbers(num - 1); // ✅ sumar result a la llamada recursiva
+    } else {
+        return result;
+    }
+}
 
 
 

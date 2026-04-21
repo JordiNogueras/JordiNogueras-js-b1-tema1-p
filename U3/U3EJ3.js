@@ -60,7 +60,22 @@ const classroomStudents = [
 console.log(totalApproved(classroomStudents));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
+function totalApproved(students){
+  function isApproved(student){
+    if(student.averageGrade>=5){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  let approveds = 0;
+  students.forEach(function(student){
+    if(isApproved(student)){
+      approveds ++;
+    }
+  });
+  return approveds;
+}
 
 
 

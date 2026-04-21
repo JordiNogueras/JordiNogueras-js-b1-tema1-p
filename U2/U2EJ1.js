@@ -30,7 +30,11 @@ for(let i=0; i<10;i++){
 }
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
+function fibonacci(num){
+	if (num === 0) return 0; // caso base 1
+    if (num === 1) return 1; // caso base 2
+    return fibonacci(num - 1) + fibonacci(num - 2); // llamada recursiva
+}
 
 
 
